@@ -8,7 +8,7 @@ class ApplicationController < Sinatra::Base
     end
     
     post "/posts" do
-      post = Post.create(content: params[:content], title: params[:title], category: params[:], username: params[:username])
+      post = Post.create(content: params[:content], title: params[:title], category: params[:category], username: params[:username])
       post.to_json
     end
     
