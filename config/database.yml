@@ -5,12 +5,12 @@ default: &default
 
 development:
   <<: *default
-  url: "postgresql://postgres:postgres@localhost:3000/phase-3-sinatra-react-project"
+  url: "postgresql://postgres:postgres@localhost:5432/phase-3-sinatra-react-project"
 
 
 test:
   <<: *default
-  url: "postgresql://postgres:postgres@localhost:3000/test_phase-3-sinatra-react-project"
+  url: "postgresql://postgres:postgres@localhost:5432/test_phase-3-sinatra-react-project"
 
 
 production:
